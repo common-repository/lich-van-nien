@@ -1,0 +1,491 @@
+.lunar-year table {
+    table-layout: unset;
+}
+
+.year-name {
+    text-align: center;
+    font-size: 150%;
+    line-height: 120%;
+    font-weight: bold;
+    color: #000000;
+    background-color: #CCCCCC
+}
+
+table.month {
+    width: 100%;
+    font-size: 13px;
+    padding: 1px;
+    line-height: 100%;
+    table-layout: unset;
+}
+
+.month .navi-left,
+.month .month-name,
+.month .navi-right {
+    text-align: -webkit-center;
+    vertical-align: middle;
+}
+
+.month,
+table.month tbody tr th,
+table.month tbody tr td {
+    padding: 5px;
+    border: 1px solid #dedede;
+    font-weight: bold;
+}
+
+.month td {
+    cursor: pointer;
+}
+
+.month td:hover {
+    background: #dedede;
+}
+
+.month td .date-lunar {
+    font-weight: normal;
+    padding-top: 3px;
+}
+
+.month-name {
+    text-align: center;
+    font-size: 125%;
+    line-height: 100%;
+    font-weight: bold;
+    color: #330033;
+    background-color: #CCFFCC
+}
+
+.navi-left {
+    text-align: center;
+    font-size: 75%;
+    line-height: 100%;
+    font-weight: bold;
+    color: red;
+    background-color: #CCFFCC
+}
+
+.navi-right {
+    text-align: center;
+    font-size: 75%;
+    line-height: 100%;
+    font-weight: bold;
+    color: #330033;
+    background-color: #CCFFCC
+}
+
+.day-of-week {
+    text-align: center;
+    font-size: 125%;
+    line-height: 100%;
+    color: #fff;
+    background-color: #13a923
+}
+
+.day-of-month {
+    background-color: #FDFDF0
+}
+
+.today {
+    background-color: #FFF000
+}
+
+.new-year {
+    background-color: #FFCC99
+}
+
+.date-lunar {
+    text-align: right;
+    font-size: 75%;
+    line-height: 100%;
+    color: blue
+}
+
+.am2 {
+    text-align: right;
+    font-size: 75%;
+    line-height: 100%;
+    color: #004080
+}
+
+.day-working {
+    text-align: left;
+    font-size: 125%;
+    color: black
+}
+
+.saturday {
+    text-align: left;
+    font-size: 125%;
+    line-height: 100%;
+    color: green
+}
+
+.sunday {
+    text-align: left;
+    font-size: 125%;
+    line-height: 100%;
+    color: red
+}
+
+.lunar-search {
+    display: flex;
+    justify-items: center;
+    margin: 10px 0px;
+}
+
+.lunar-search .lunar-search-item {
+    height: 35px;
+}
+
+.lunar-search select.lunar-search-item {
+    width: 20%;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    padding: 0px 8px;
+    height: 37px;
+
+}
+
+.lunar-search input {
+    width: 45%;
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+
+.lunar-search button.lunar-search-item {
+    width: 35%;
+    font-weight: bold;
+    cursor: pointer;
+    height: 37px;
+}
+
+td a.lunar-next {
+    border-bottom: 0px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('../images/right-arrow.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+td a.lunar-prev {
+    border-bottom: 0px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('../images/left-arrow.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.lunar-year > table > tbody > tr > td {
+    padding: 5px;
+}
+
+.ui-datepicker {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: none;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    position: relative;
+    padding: .2em 0;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    width: 1em;
+    height: 1em;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+    background: url('../images/left-arrow.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+    left: 2px;
+}
+
+.ui-datepicker .ui-datepicker-next {
+    background: url('../images/right-arrow.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+    right: 2px;
+}
+
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -8px;
+    top: 50%;
+    margin-top: -8px;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    margin: 0 2.3em;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+.ui-datepicker .ui-datepicker-title select {
+    font-size: 1em;
+    margin: 1px 0;
+}
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+    width: 49%;
+}
+
+.ui-datepicker table {
+    width: 100%;
+    font-size: .9em;
+    border-collapse: collapse;
+    margin: 0 0 .4em;
+}
+
+.ui-datepicker th {
+    background: #dedede;
+    padding: .5em .3em;
+    text-align: center;
+    font-weight: bold;
+    border: 0;
+}
+
+.ui-datepicker td {
+    border: 1px solid #dfdfdf;
+    padding: 1px;
+}
+
+.ui-datepicker td:hover {
+    background: #13a923;
+}
+
+.ui-datepicker td:hover a {
+    color: #fff;
+}
+
+.ui-datepicker-current-day {
+    background: #13a923;
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+    display: block;
+    color: #454545;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.ui-datepicker-current-day a.ui-state-active {
+    color: #fff;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane {
+    background-image: none;
+    margin: .7em 0 0 0;
+    padding: 0 .2em;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button {
+    float: right;
+    margin: .5em .2em .4em;
+    cursor: pointer;
+    padding: .2em .6em .3em .6em;
+    width: auto;
+    overflow: visible;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+    float: left;
+}
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+    width: auto;
+}
+
+.ui-datepicker-multi .ui-datepicker-group {
+    float: left;
+}
+
+.ui-datepicker-multi .ui-datepicker-group table {
+    width: 95%;
+    margin: 0 auto .4em;
+}
+
+.ui-datepicker-multi-2 .ui-datepicker-group {
+    width: 50%;
+}
+
+.ui-datepicker-multi-3 .ui-datepicker-group {
+    width: 33.3%;
+}
+
+.ui-datepicker-multi-4 .ui-datepicker-group {
+    width: 25%;
+}
+
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+    border-left-width: 0;
+}
+
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+    clear: left;
+}
+
+.ui-datepicker-row-break {
+    clear: both;
+    width: 100%;
+    font-size: 0;
+}
+
+/* RTL support */
+.ui-datepicker-rtl {
+    direction: rtl;
+}
+
+.ui-datepicker-rtl .ui-datepicker-prev {
+    right: 2px;
+    left: auto;
+}
+
+.ui-datepicker-rtl .ui-datepicker-next {
+    left: 2px;
+    right: auto;
+}
+
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+    right: 1px;
+    left: auto;
+}
+
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+    left: 1px;
+    right: auto;
+}
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+    clear: right;
+}
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+    float: left;
+}
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+    float: right;
+}
+
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+    border-right-width: 0;
+    border-left-width: 1px;
+}
+
+.day-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #13a923;
+    padding: 5px;
+    text-align: center;
+}
+
+.day-top .lunar-prev,
+.day-top .lunar-next {
+    margin-top: 4px;
+    cursor: pointer;
+    width: 1.4em;
+    height: 1.4em;
+}
+
+.day-top .lunar-prev {
+    float: left;
+    margin-left: 5px;
+    background: url('../images/left-arrow.png');
+    background-size: cover;
+}
+
+.day-top .lunar-next {
+    float: right;
+    margin-right: 5px;
+    background: url('../images/right-arrow.png');
+    background-size: cover;
+}
+
+.day-top input {
+    background:#fff;
+    width: 120px;
+    height: 30px;
+    border:1px solid #dedede;
+    padding:5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.day-content {
+    line-height: 1;
+    padding: 10px 10px 15px 10px;
+    text-align: center;
+    background-image: linear-gradient(to top, rgba(66,59,16,0.1), rgba(36,230,57,0.2));
+}
+
+.day-content h5.month-of-year {
+    font-size: 13px;
+    color: #e62470;
+}
+
+.day-content .day {
+    padding: 10px 0px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #a9134e;
+}
+
+.day-content .hoangdao {
+    font-size: 12px;
+    line-height: 16px;
+    color: #828883;
+}
+.day-content .calendar-lunar{
+    display: flex;
+    margin-top:10px;
+}
+.day-content .calendar-lunar .col-left,
+.day-content .calendar-lunar .col-right {
+    width:50%;
+}
+.day-content .calendar-lunar h5.title{
+    font-size:16px;
+    font-weight: bold;
+    margin-bottom:10px;
+}
+.day-content .calendar-lunar .description{
+    font-size:13px;
+    color: #555;
+    line-height: 16px;
+}
+.day-content .calendar-lunar .day{
+    font-size:30px;
+    padding:0px;
+}
